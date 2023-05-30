@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+main #s1 {
+    margin-bottom: 2.5rem;
+}
+
+main #s1 #logo {
+    width: 105px;
+    margin-bottom: 2.5rem;
+}
+
+main #s1 #mockups {
+    width: 100%;
+}
+
+main #s2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main #s2 h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+main #s2 p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+main #s2 button {
+    outline: none;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Violet);
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+main #s2 button:hover {
+    color: white;
+    background-color: var(--Soft-Magenta);
+}
+
+main #s2 .logos #facebook-logo {
+    margin-right: 0.5rem;
+}
+
+main #s2 .logos img {
+    cursor: pointer;
+    width: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-family: 600;
+    font-size: 0.85rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+footer p a {
+    color: orange;
+}
+
+@media screen and (min-width:768px) {
+    main {
+        flex-direction: row;
+    }
+
+    main #s1 {
+        margin-left: 2rem;
+    }
+
+    main #s1 #logo {
+        width: 165px;
+    }
+
+    main #s2 {
+        width: 70%;
+        margin-left: 5rem;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main #s2 p {
+        text-align: left;
+        max-width: 500px;
+    }
+
+    main #s2 h1 {
+        font-size: 2rem;
+        text-align: left;
+        max-width: 400px;
+    }
+
+    main #s2 .logos {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
